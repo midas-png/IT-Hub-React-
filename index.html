@@ -39,25 +39,24 @@
                     'justifyContent':'center'
                 }
 
-                let styleContainer = {
+                let styleBlock = {
                     'fontSize':'1rem',
                     'color':'#000'
                 }
 
-                let textStyle = {
-                    'marginRight':'30px',
-                    'align-items': 'flexStart'
+                let textStyleMargin = {
+                    'marginRight':'30px'
                 }
 
                 return(
                     <div className="Weather" style={styleOfCard} >                    
-                        <div style={styleContainer} >
+                        <div style={styleBlock} >
                             <div>Температура: {this.props.temp} °C 
                             </div>
                         </div>
-                        <div style={styleContainer}>
+                        <div style={styleBlock}>
                             <img width='25px' src={weatherType[this.props.weatherType]}/>
-                            <div style={textStyle} /> Осадки: {this.props.weatherType} 
+                            <div style={textStyleMargin} /> Осадки: {this.props.weatherType} 
                         </div>
                     </div>
                 )
