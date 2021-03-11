@@ -10,7 +10,7 @@
     <title>React Срез ITHub</title>
 </head>
 <body>
-    <div id="WeatherPrediction"></div>
+    <div class="WeatherPrediction"></div>
     <script type='text/babel'>
         let weatherType = {
             'Немного облачно':'pictures/cloud.png',
@@ -70,7 +70,8 @@
                 <WeatherCard name='Вечер' temp='20' weatherType='Облачно' /> 
                 <WeatherCard name='Ночь' temp='16' weatherType='Дождик'/>
             </div>, 
-            document.getElementById('WeatherPrediction'))
+            document.getElementByClassName('WeatherPrediction')
+            )
     </script>
 </body>
 </html>
